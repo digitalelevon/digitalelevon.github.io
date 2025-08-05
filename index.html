@@ -1,248 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Digielevon - Best digital marketing agency in Malappuram. Digital marketing expert, Islamic scholar, and graphic designer.">
-  <meta name="keywords" content="Best digital marketing agency in Malappuram, Digielevon, Digital Marketing Expert, Islamic Scholar, Graphic Designer, Malappuram">
-  <meta name="author" content="Digielevon Digital Marketing Agency Malappuram">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digielevon - Best Digital Marketing Agency in Malappuram</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Digielevon - Digital Marketing Expert, Islamic Scholar & Graphic Designer at Digielevon Digital Marketing Agency Malappuram. Best digital marketing agency in Malappuram."/>
+  <title>Digielevon | Best Digital Marketing Agency in Malappuram</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    /* Ainjmal Inspired Style - Clean, Elegant, Modern */
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
-      color: #fff;
-      overflow-x: hidden;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0e0e0e;
+      color: #f5f5f5;
+      line-height: 1.6;
     }
-
     header {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       text-align: center;
-      padding: 80px 20px;
-      background: linear-gradient(135deg, #1e293b, #0f172a);
+      padding: 3rem 1rem;
     }
-
     header h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
       font-weight: 700;
-      margin-bottom: 10px;
-      background: linear-gradient(90deg, #38bdf8, #a78bfa, #f472b6);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: fadeIn 2s ease-in-out;
     }
-
     header p {
-      font-size: 1.3rem;
-      color: #cbd5e1;
-      animation: fadeIn 3s ease-in-out;
+      font-size: 1.2rem;
+      color: #ddd;
+      max-width: 700px;
+      margin: auto;
     }
-
-    .container {
+    section {
+      padding: 3rem 1rem;
       max-width: 1100px;
       margin: auto;
-      padding: 50px 20px;
     }
-
-    .card {
-      background: rgba(255,255,255,0.05);
-      border-radius: 20px;
-      padding: 30px;
-      margin: 25px 0;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-      backdrop-filter: blur(12px);
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-      animation: slideUp 1s ease-in-out;
-    }
-
-    .card:hover {
-      transform: translateY(-12px);
-      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
-    }
-
     h2 {
-      font-size: 1.9rem;
-      margin-bottom: 15px;
-      background: linear-gradient(90deg, #34d399, #fbbf24, #f87171);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    p {
-      line-height: 1.7;
-      color: #e2e8f0;
-      font-size: 1.05rem;
-    }
-
-    .contact {
       text-align: center;
-      margin-top: 60px;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      position: relative;
     }
-
-    .contact a {
+    h2::after {
+      content: '';
+      width: 80px;
+      height: 3px;
+      background: #00c6ff;
+      display: block;
+      margin: 0.5rem auto 0;
+      border-radius: 2px;
+    }
+    .about, .services, .contact {
+      margin-bottom: 4rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 15px;
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+    .card h3 {
+      margin-bottom: 1rem;
+      color: #00c6ff;
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .contact-info a {
       display: inline-block;
-      margin: 12px;
-      padding: 14px 28px;
-      border-radius: 35px;
-      background: linear-gradient(90deg, #06b6d4, #3b82f6, #9333ea);
+      margin: 0.5rem 1rem;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      background: #00c6ff;
       color: #fff;
       text-decoration: none;
-      font-weight: 600;
-      transition: transform 0.3s ease, background 0.4s ease;
+      transition: background 0.3s ease;
     }
-
-    .contact a:hover {
-      background: linear-gradient(90deg, #9333ea, #3b82f6, #06b6d4);
-      transform: scale(1.05);
+    .contact-info a:hover {
+      background: #0099cc;
     }
-
     footer {
+      background: #111;
       text-align: center;
-      padding: 40px 20px;
-      font-size: 0.95rem;
-      color: #94a3b8;
-      background: #0f172a;
-      letter-spacing: 0.5px;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #aaa;
     }
-
-    /* Glow Animations */
-    .glow {
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(56,189,248,0.25), transparent);
-      animation: float 8s ease-in-out infinite;
-      z-index: -1;
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      width: 55px;
+      height: 55px;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 28px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
     }
-
-    .glow:nth-child(1) {
-      top: 12%;
-      left: 6%;
-    }
-
-    .glow:nth-child(2) {
-      bottom: 12%;
-      right: 6%;
-      animation-delay: 4s;
-    }
-
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(0px);
-      }
-      50% {
-        transform: translateY(-25px);
-      }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      .card {
-        padding: 20px;
-      }
-      h2 {
-        font-size: 1.5rem;
-      }
-      p {
-        font-size: 1rem;
-      }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
 <body>
-  <div class="glow"></div>
-  <div class="glow"></div>
 
   <header>
     <h1>Digielevon</h1>
-    <p>Best Digital Marketing Agency in Malappuram</p>
+    <p>Digital Marketing Expert | Islamic Scholar | Graphic Designer<br>
+    at <strong>Digielevon Digital Marketing Agency Malappuram</strong><br>
+    <em>Best digital marketing agency in Malappuram</em></p>
   </header>
 
-  <div class="container">
-    <div class="card">
-      <h2>About Digielevon</h2>
-      <p>
-        Welcome to <strong>Digielevon Digital Marketing Agency Malappuram</strong>. 
-        Founded by <strong>Digielevon</strong>, a <em>digital marketing expert</em> dedicated to helping brands thrive online.  
-        Our strategies ensure you reach your audience with powerful and effective campaigns. 
-        That’s why we are known as the <strong>Best digital marketing agency in Malappuram</strong>.
-      </p>
-    </div>
+  <section class="about">
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      I am <strong>Digielevon</strong>, a dedicated <strong>digital marketing expert</strong> helping brands grow with innovative online strategies. 
+      Alongside my professional expertise, I am an <strong>Islamic scholar</strong> and a passionate <strong>graphic designer</strong> 
+      committed to blending creativity with knowledge to make an impact.
+    </p>
+  </section>
 
-    <div class="card">
-      <h2>More Than Marketing</h2>
-      <p>
-        Digielevon is not just a marketer — he is also an <strong>Islamic scholar</strong> and a talented <strong>graphic designer</strong>.  
-        His diverse expertise brings creativity, wisdom, and a unique perspective to every project, ensuring excellence beyond expectations.
-      </p>
+  <section class="services">
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Digital Marketing</h3>
+        <p>SEO, Social Media Marketing, Google Ads & Branding strategies to grow businesses.</p>
+      </div>
+      <div class="card">
+        <h3>Graphic Design</h3>
+        <p>Creative visual content, logos, posters, and branding elements that stand out.</p>
+      </div>
+      <div class="card">
+        <h3>Knowledge Sharing</h3>
+        <p>Islamic scholarship and guidance for balanced personal and professional life.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h2>Why Choose Us?</h2>
-      <p>
-        At Digielevon Digital Marketing Agency Malappuram, we specialize in SEO, social media marketing, branding, and graphic design.  
-        With professional strategies and creative storytelling, we help your business stand out and grow.  
-        Partner with us for success powered by innovation and experience.
-      </p>
+  <section class="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>📞 <strong>+91 7510477475</strong></p>
+      <a href="https://www.instagram.com/sinn7an?igsh=Mzl5MGFhem1mY2g1" target="_blank">Instagram</a>
+      <a href="https://wa.me/+917510477475" target="_blank">WhatsApp</a>
     </div>
+  </section>
 
-    <div class="contact">
-      <a href="tel:+917510477475">📞 Call: +91 7510477475</a>
-      <a href="https://wa.me/+917510477475" target="_blank">💬 WhatsApp</a>
-      <a href="https://www.instagram.com/sinn7an?igsh=Mzl5MGFhem1mY2g1" target="_blank">📸 Instagram</a>
-    </div>
-  </div>
+  <a href="https://wa.me/+917510477475" target="_blank" class="whatsapp-float">💬</a>
 
   <footer>
-    © 2025 Digielevon Digital Marketing Agency Malappuram. Crafted with creativity & expertise.
+    &copy; 2025 Digielevon Digital Marketing Agency Malappuram. All rights reserved.
   </footer>
 
   <script>
-    // Smooth scroll for internal links
+    // Smooth scroll for internal links (if expanded later)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function(e) {
+      anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth"
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
         });
       });
     });
-
-    // Typing effect for header tagline
-    const text = "Best Digital Marketing Agency in Malappuram";
-    const tagline = document.querySelector("header p");
-    let i = 0;
-    tagline.textContent = "";
-
-    function typeEffect() {
-      if (i < text.length) {
-        tagline.textContent += text.charAt(i);
-        i++;
-        setTimeout(typeEffect, 60);
-      }
-    }
-    typeEffect();
   </script>
+
 </body>
-    </html>
+        </html>
