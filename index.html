@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digielevon | Digital Marketing Expert</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Roboto:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #0f2027;
+      color: #f4f4f4;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background: url('https://www.transparenttextures.com/patterns/arabesque.png');
+      opacity: 0.1;
+    }
+
+    header h1 {
+      font-family: 'Cairo', sans-serif;
+      font-size: 3em;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      opacity: 0.85;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      font-family: 'Cairo', sans-serif;
+      font-size: 2em;
+      margin-bottom: 20px;
+      border-left: 5px solid #ffd700;
+      padding-left: 15px;
+    }
+
+    .about p, .services p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li {
+      background: rgba(255,255,255,0.05);
+      margin-bottom: 15px;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 5px solid #ffd700;
+      backdrop-filter: blur(5px);
+      transition: transform 0.3s ease;
+    }
+
+    .services li:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact {
+      background: linear-gradient(135deg, #203a43, #2c5364);
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 15px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      color: #ffd700;
+      text-decoration: none;
+      border: 1px solid #ffd700;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .contact a:hover {
+      background: #ffd700;
+      color: #0f2027;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      background: #0f2027;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="fade-in">Digielevon</h1>
+    <p class="fade-in" style="transition-delay: 0.3s;">Digital Marketing Expert | Islamic Scholar | Graphic Designer</p>
+  </header>
+
+  <section class="about fade-in">
+    <h2 class="section-title">About Digielevon</h2>
+    <p>
+      Welcome to <strong>Digielevon Digital Marketing Agency</strong> based in Malappuram. I am a dedicated <strong>Digital Marketing Expert</strong> with a deep passion for crafting strategies that elevate brands in the digital space. Beyond marketing, my journey as an <strong>Islamic Scholar</strong> and <strong>Graphic Designer</strong> allows me to bring unique creativity and depth to my work, ensuring every project is not just professional, but also meaningful.
+    </p>
+  </section>
+
+  <section class="services fade-in">
+    <h2 class="section-title">Services</h2>
+    <ul>
+      <li>🔹 Digital Marketing Strategy & Consultation</li>
+      <li>🔹 SEO Optimization & Local SEO Expert in Malappuram</li>
+      <li>🔹 Social Media Campaigns & Branding</li>
+      <li>🔹 Creative Graphic Design & Visual Branding</li>
+      <li>🔹 Islamic Educational Content & Digital Dawah</li>
+    </ul>
+  </section>
+
+  <section class="contact fade-in">
+    <h2>Contact Me</h2>
+    <p>📞 +91 7510477475</p>
+    <a href="tel:+917510477475">Call Now</a>
+    <a href="https://www.instagram.com/sinn7an?igsh=Mzl5MGFhem1mY2g1" target="_blank">Instagram</a>
+  </section>
+
+  <footer>
+    © 2025 Digielevon Digital Marketing Agency. All rights reserved.
+  </footer>
+
+  <script>
+    // Scroll Reveal Animation
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.fade-in').forEach(element => {
+      observer.observe(element);
+    });
+  </script>
+
+</body>
+</html>
