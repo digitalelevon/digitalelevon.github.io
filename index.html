@@ -711,7 +711,6 @@ i<!DOCTYPE html>
         <header>
         <div class="container header-container">
             <a href="#" class="logo">
-                <!-- REPLACE THIS URL WITH YOUR LOGO IMAGE -->
                 <img src="20250806_181158.png" alt="Digielevon Logo" class="logo-image">
             </a>
             <nav class="nav-links">
@@ -1061,16 +1060,7 @@ i<!DOCTYPE html>
         });
         
         // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.padding = '1rem 0';
-                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.2)';
-            } else {
-                header.style.padding = '1.5rem 0';
-                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
-            }
-        });
+
         
         // Portfolio filtering
         const filterButtons = document.querySelectorAll('.filter-btn');
@@ -1090,7 +1080,16 @@ i<!DOCTYPE html>
                     if (filterValue === 'All Projects' || item.querySelector('h3').textContent.includes(filterValue)) {
                         item.style.display = 'block';
                     } else {
-                        item.style.display = 'none';
+                          window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.padding = '1rem 0';
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.2)';
+            } else {
+                header.style.padding = '1.5rem 0';
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+            }
+        });      item.style.display = 'none';
                     }
                 });
             });
