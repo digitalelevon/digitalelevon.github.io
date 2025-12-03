@@ -1,0 +1,7 @@
+{
+  "name": "Cochin Spices - Meenakshi AI",
+  "description": "An AI-powered restaurant assistant for Cochin Spices, featuring Meenakshi, a friendly manager who speaks Malayalam.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
